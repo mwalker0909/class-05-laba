@@ -30,7 +30,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
+  var myProduct = a * b;
+  var phase = 'The product of 5 and 9 is 45.' + myProduct + '.';
 
+  return [myProduct, phrase];
+  console.log(multiply)(5,9[1]);
 }
 
 // Here is the test for multiply(); uncomment it to run it
