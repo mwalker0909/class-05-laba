@@ -28,8 +28,8 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
   var myProduct = a*b;
-  var phrase = 'The product of 5 and 9 is ' + myProduct +'.';
-  return [myProduct, phrase];
+  var message = 'The product of 5 and 9 is ' + myProduct +'.';
+  return [myProduct, message];
 
 }
 // Here is the test for multiply(); uncomment it to run it
@@ -76,14 +76,14 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-    var sumTestArrayOne = sum(sumArr[0], sumArr[1])[0];
-    var sumTestArrayTwo = sum(sumTestArrayOne, sumArr[2])[0];
+  var sumTestArrayOne = sum(sumArr[0], sumArr[1])[0];
+  var sumTestArrayTwo = sum(sumTestArrayOne, sumArr[2])[0];
 
-    var message = testArray.toString() + ' was passed in as an array of numbers, and ' + sumTestArrayTwo + ' is their sum.';
+  var message = testArray.toString() + ' was passed in as an array of numbers, and ' + sumTestArrayTwo + ' is their sum.';
 
-    return [sumTestArrayTwo, message] ;
+  return [sumTestArrayTwo, message] ;
 }
-   
+ 
 // Here is the test for sumArray(); uncomment it to run it
 
 testSumArray(testArray);
@@ -99,12 +99,19 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+  
+    var productArrayOne = multiply(multArr[0], multArr[1])[0];
+    var productArrayTwo = multiply(productArrayOne, multArr[2])[0];
 
+    var message = 'The numbers 2,3,4 have a product of 24.'
+  
+  return [productArrayTwo, message];
+    
     
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-//testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
