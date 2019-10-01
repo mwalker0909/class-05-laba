@@ -28,45 +28,25 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
   var myProduct = a*b;
-  var phrase = 'The product of 5 and 9 is ' + myProduct +'.';
-  return [myProduct, phrase];
-<<<<<<< HEAD
+  var message = 'The product of 5 and 9 is ' + myProduct +'.';
+  return [myProduct, message];
 
 }
 // Here is the test for multiply(); uncomment it to run it
 testMultiply(5,9);
-=======
-
-  
-}
-// console.log(multiply(5,9)[0]);
-
-//Here is the test for multiply(); uncomment it to run it
- testMultiply(5,9);
->>>>>>> master
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
 /* Problem 3
 Write a function called sumAndMultiply() that takes in three numbers as separate arguments and returns an array where the first element is the sum of those three numbers, the second element is the product of those three numbers,  and the third and fourth elements are strings that EXACTLY follow this example and use the values that were input into the function:
-<<<<<<< HEAD
 Third element: "4 and 7 and 5 sum to 16."
-=======
-
-Third element: "4 and 7 and 5 sum to 16."sss
->>>>>>> master
 Fourth element: "The product of 4 and 7 and 5 is 140."
 IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this function. To do addition, use your sum() function, and to do multiplication, use your multiply() function that you've already created. You're going to have to be resourceful to figure out how to do this. However, you may continue to use the + operator for string concatenation.
-<<<<<<< HEAD
-=======
-  
->>>>>>> master
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-<<<<<<< HEAD
  
   var sumOne = sum(a, b)[0];
   var sumTwo = sum(sumOne, c)[0];
@@ -74,7 +54,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
   var productOne = multiply(a, b)[0];
   var productTwo = multiply(productOne, c)[0];
 
-  var messageOne = a + ' and '+ b + ' and ' + c + ' sum to ' + sumTwo + '.';
+    var messageOne = a + ' and '+ b + ' and ' + c + ' sum to ' + sumTwo + '.';
   var messageTwo = 'The product of 4 and 7 and 5 is ' + productTwo +'.';  
   
   return [sumTwo, productTwo, messageOne, messageTwo];
@@ -82,16 +62,6 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
-=======
-var one = sum(a,b);
-var two = sum(two,c)[0];
-console.log(one)
-return 1;       
-}
-
- // Here is the test for sumAndMultiply(); uncomment it to run it
- testSumAndMultiply(4,7,5);
->>>>>>> master
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -106,14 +76,14 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-    var sumTestArrayOne = sum(sumArr[0], sumArr[1])[0];
-    var sumTestArrayTwo = sum(sumTestArrayOne, sumArr[2])[0];
+  var sumTestArrayOne = sum(sumArr[0], sumArr[1])[0];
+  var sumTestArrayTwo = sum(sumTestArrayOne, sumArr[2])[0];
 
-    var message = testArray.toString() + ' was passed in as an array of numbers, and ' + sumTestArrayTwo + ' is their sum.';
+  var message = testArray.toString() + ' was passed in as an array of numbers, and ' + sumTestArrayTwo + ' is their sum.';
 
-    return [sumTestArrayTwo, message] ;
+  return [sumTestArrayTwo, message] ;
 }
-   
+ 
 // Here is the test for sumArray(); uncomment it to run it
 
 testSumArray(testArray);
@@ -129,7 +99,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+  
+    
 
+  
+  return [productArrayTwo, message];
+    
     
 }
 
