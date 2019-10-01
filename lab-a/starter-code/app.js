@@ -54,7 +54,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
   var productOne = multiply(a, b)[0];
   var productTwo = multiply(productOne, c)[0];
 
-  var messageOne = '4 and 7 and 5 sum to 16.';
+    var messageOne = a + ' and '+ b + ' and ' + c + ' sum to ' + sumTwo + '.';
   var messageTwo = 'The product of 4 and 7 and 5 is ' + productTwo +'.';  
   
   return [sumTwo, productTwo, messageOne, messageTwo];
@@ -100,13 +100,12 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
   
-    var productArrayOne = multiply(multArr[0], multArr[1])[0];
-    var productArrayTwo = multiply(productArrayOne, multArr[2])[0];
+  var productArrayOne = multiply(multArr[0], multArr[1])[0];
+  var productArrayTwo = multiply(productArrayOne, multArr[2])[0];
 
-    var message = 'The numbers 2,3,4 have a product of 24.'
-  
-  return [productArrayTwo, message];
-    
+  var message = 'The numbers 2,3,4 have a product of 24.'
+
+return [productArrayTwo, message];
     
 }
 
