@@ -107,7 +107,6 @@ function multiplyArray(multArr) { //eslint-disable-line
   
   return [productArrayTwo, message];
     
-    
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
@@ -131,11 +130,16 @@ Test this function by hand in the console to get it working, and when you think 
 var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+//<<<<<<< HEAD
 
-
-
-
+//=======
+// unable to conceptualize
 }
+//>>>>>>> master
+
+
+
+
 // changed syntax errors
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyAnyArray(testDynamicArray);
